@@ -1,5 +1,4 @@
 # VHDL-Project
-Car racing game with VHDL
 First, you should install the program on FPGA board via Adept. Then, you should connect the VGA driver of your monitor to the FPGA board. 
 It’s that simple: You are ready to play! 
 There are 3 buttons for your use. The button at the center (BNTS) is to reset the game. 
