@@ -1,0 +1,30 @@
+#
+# Pin assignments for the Nexys3 Board.
+#
+net reset loc=B8; # Push-Button BTNS
+net left loc=C4; # Push-Button BTNL
+net right loc=D9; # Push-Button BTNR
+net clk loc=V10; # 100 MHz board clock
+net vs loc=P7; # VGA-VSYNC
+net hs loc=N6; # VGA-HSYNC
+net red<0> loc=U7; # VGA-RED0
+net red<1> loc=V7; # VGA-RED1
+net red<2> loc=N7; # VGA-RED2
+net green<0> loc=P8; # VGA-GRN0
+net green<1> loc=T6; # VGA-GRN1
+net green<2> loc=V6; # VGA-GRN2
+net blue<0> loc=R7; # VGA-BLU1
+net blue<1> loc=T7; # VGA-BLU2
+NET "reset" CLOCK_DEDICATED_ROUTE=FALSE;
+Net SSEG_CA<0> LOC=T17 | IOSTANDARD=LVCMOS33; # Connected to CA
+Net SSEG_CA<1> LOC=T18 | IOSTANDARD=LVCMOS33; # Connected to CB
+Net SSEG_CA<2> LOC=U17 | IOSTANDARD=LVCMOS33; # Connected to CC
+Net SSEG_CA<3> LOC=U18 | IOSTANDARD=LVCMOS33; # Connected to CD
+Net SSEG_CA<4> LOC=M14 | IOSTANDARD=LVCMOS33; # Connected to CE
+Net SSEG_CA<5> LOC=N14 | IOSTANDARD=LVCMOS33; # Connected to CF
+Net SSEG_CA<6> LOC=L14 | IOSTANDARD=LVCMOS33; # Connected to CG
+Net SSEG_CA<7> LOC=M13 | IOSTANDARD=LVCMOS33; # Connected to DP
+Net SSEG_AN<3> LOC=N16 | IOSTANDARD=LVCMOS33; # Connected to AN0
+Net SSEG_AN<2> LOC=N15 | IOSTANDARD=LVCMOS33; # Connected to AN1
+Net SSEG_AN<1> LOC=P18 | IOSTANDARD=LVCMOS33; # Connected to AN2
+Net SSEG_AN<0> LOC=P17 | IOSTANDARD=LVCMOS33; # Connected to AN3
